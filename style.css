@@ -1,61 +1,69 @@
-body { 
+body {
   background-color: white;
   margin-top: 0;
   margin-left: 0;
   max-width: 480px;
 }
-#triangle, #square{
+
+#triangle {
   margin-top: 0;
   height: 74px;
   width: 74px;
 }
+
 #square {
   margin-left: -41px;
+  margin-top: 0;
+  height: 74px;
+  width: 74px;
 }
+
 #menuimg {
   height: 25px;
   width: 40px;
 }
+
 .menu {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
+
 .title {
-  font-family:'Playfair Display';
+  font-family: Playfair Display, sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 150%;
-  color: #1A2236;
-  
+  color: #1a2236;
 }
+
 #intro {
   margin-left: 2%;
 }
+
 .paragraph {
-  font-family: 'Poppins';
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  letter-spacing: -0.0.1em;
-  color: #1A2236;
+  letter-spacing: '-0.0.1em';
+  color: #1a2236;
 }
+
 .button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 35px;
 }
-#introbutton{
+
+#introbutton {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 15px;
-  background-color: #1A2236;
+  background-color: #1a2236;
   color: white;
 }
-
-
-
