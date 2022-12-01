@@ -4,16 +4,18 @@ body {
   margin-left: 0;
   max-width: 480px;
 }
+
 #styletriangle {
   width: 0px;
   height:0px;
   border-top: 74px solid #fec25a;
   border-right: 74px solid transparent;
 }
-.shape{
+.shape {
   display: flex;
   justify-items: start;
 }
+
 #diamond {
   width: 0;
   height: 0;
@@ -32,21 +34,6 @@ body {
   height: 0;
   border: 37px solid transparent;
   border-top-color: #e35461;
-
-}
-
-
-#triangle {
-  margin-top: 0;
-  height: 74px;
-  width: 74px;
-}
-
-#square {
-  margin-left: -41px;
-  margin-top: 0;
-  height: 74px;
-  width: 74px;
 }
 
 #menuimg {
