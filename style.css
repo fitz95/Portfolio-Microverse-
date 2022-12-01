@@ -1,16 +1,17 @@
-body { 
+body {
   background-color: white;
   margin-top: 0;
   margin-left: 0;
   max-width: 480px;
 }
 
-#styletriangle {
-  width: 0px;
-  height:0px;
+#triangle {
+  width: 0;
+  height: 0;
   border-top: 74px solid #fec25a;
   border-right: 74px solid transparent;
 }
+
 .shape {
   display: flex;
   justify-items: start;
@@ -23,9 +24,10 @@ body {
   border-bottom-color: #e35461;
   position: relative;
   top: -37px;
-  margin-left:-37px ;
+  margin-left: -37px;
 }
-#diamond:after {
+
+#diamond::after {
   content: '';
   position: absolute;
   left: -37px;
