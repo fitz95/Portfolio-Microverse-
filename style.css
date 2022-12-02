@@ -3,7 +3,7 @@ body {
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
-  max-width: 500px;
+
 }
 
 #triangle {
@@ -42,7 +42,6 @@ body {
 #menuimg {
   height: 25px;
   width: 40px;
-  margin-right: 20px;
 }
 
 .menu {
@@ -61,8 +60,7 @@ body {
 }
 
 #intro {
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-left: 2%;
 }
 
 .paragraph {
@@ -90,5 +88,3 @@ body {
   background-color: #1a2236;
   color: white;
 }
-
-
