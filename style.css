@@ -154,19 +154,12 @@ body {
   height: 15.35px;
 }
 
-.workgrid {
-  display: grid;
-  grid-template-columns: auto;
-  gap: 16px;
-}
-
 .grid-item {
   background-color: #1c528a;
   padding-bottom: 53px;
   padding-left: 50px;
   position: 50px;
   font-size: 30px;
-  text-align: left;
   color: white;
   font-family: Poppins, sans-serif;
   height: 286px;
@@ -185,12 +178,39 @@ body {
   line-height: 27px;
 }
 
-#aboutgrid {
+.gridproject {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-color: #1a2236;
+}
+
+.gridimg {
+  grid-row: span 1;
+}
+
+.gridcontent {
+  grid-row: span 1;
+  margin-left: 16px;
+  color: white;
+  font-family: Poppins, sans-serif;
+}
+
+.gridconten h3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#about {
   margin-left: 16px;
   margin-right: 16px;
 }
 
-#aboutgrid p {
+#about h1 {
+  display: flex;
+  justify-content: start;
+}
+
+#about p {
   margin-bottom: 32px;
 }
 
