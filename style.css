@@ -107,6 +107,11 @@ body {
   width: 100%;
 }
 
+#projects {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .project {
   background-color: #1a2236;
   color: white;
@@ -127,7 +132,22 @@ body {
   display: flex;
   justify-content: start;
   gap: 10px;
+  margin-left: 0;
   margin-bottom: 26px;
+  list-style-type: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.projectbuttons li {
+  background-color: #98dede;
+  padding: 7px;
+  margin-left: 0;
+  color: black;
 }
 
 .projectbuttons button {
@@ -195,14 +215,17 @@ body {
   font-family: Poppins, sans-serif;
 }
 
-.gridconten h3 {
+.gridcontent h3 {
   font-size: 20px;
   font-weight: 300;
+  margin-bottom: 10px;
 }
 
 #about {
-  margin-left: 16px;
-  margin-right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 16px;
 }
 
 #about h1 {
@@ -245,7 +268,7 @@ body {
   width: 120px;
   height: 120px;
   margin-right: -18px;
-  margin-top: -3px;
+  margin-top: 40px;
   z-index: 0.9;
 }
 
@@ -256,7 +279,8 @@ body {
   width: 120px;
   height: 120px;
   margin-right: -22px;
-  margin-top: -20px;
+  margin-top: 20px;
+  margin-bottom: -25px;
   z-index: 0.9;
 }
 
@@ -267,7 +291,7 @@ body {
   width: 120px;
   height: 120px;
   margin-right: -18px;
-  margin-top: -28px;
+  margin-top: 13px;
   z-index: 0.9;
 }
 
