@@ -319,12 +319,12 @@ li {
 
 .full-input {
   width: 100%;
-  margin-top: 8px;
   display: inline-block;
   padding: 3px;
   border: 2px solid #dfdfe0;
   border-radius: 5px;
   background-color: white;
+  margin-bottom: 8px;
 }
 
 .input {
@@ -353,8 +353,7 @@ label {
   padding-left: 10px;
 }
 
-.textarea-inpu {
-  margin-top: 20px;
+.textarea-input {
   margin-bottom: 15px;
 }
 
