@@ -338,6 +338,12 @@ li {
   padding-left: 10px;
 }
 
+#name::placeholder {
+  color: #1A2236;
+  font-size: 14px;
+  line-height: 21px;
+}
+
 label {
   display: block;
   font-size: 12px;
@@ -383,4 +389,40 @@ label {
   cursor: pointer;
   text-align: center;
   margin-right: -10px;
+}
+
+#footer {
+  background: #1A2236;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#footer .resume {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+#footer .resume .paragraph {
+  color: #92DCDC;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  display: inline;
+  margin: 0px 16px;
+}
+#footer .resume .fa-arrow-up-right-from-square {
+  color: #92DCDC;
+  font-size: 20px;
+}
+#footer .social-media-icon {
+  display: flex;
+  flex-wrap: nowrap;
+  color: white;
+  justify-content: space-evenly;
+}
+#footer .social-media-icon i {
+  font-size: 20px;
 }
