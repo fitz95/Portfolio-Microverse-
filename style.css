@@ -305,7 +305,7 @@ li {
 
 #form {
   margin-top: 50px;
-  background-color: #F9F9FA;
+  background-color: #f9f9fa;
 }
 
 .form-title {
@@ -322,7 +322,7 @@ li {
   margin-top: 8px;
   display: inline-block;
   padding: 3px;
-  border: 2px solid #DFDFE0;
+  border: 2px solid #dfdfe0;
   border-radius: 5px;
   background-color: white;
 }
@@ -330,7 +330,7 @@ li {
 .input {
   outline: none;
   border: none;
-  display:block;
+  display: block;
   line-height: 21px;
   font-size: 14px;
   font-weight: 400;
@@ -339,7 +339,7 @@ li {
 }
 
 #name::placeholder {
-  color: #1A2236;
+  color: #1a2236;
   font-size: 14px;
   line-height: 21px;
 }
@@ -347,13 +347,13 @@ li {
 label {
   display: block;
   font-size: 12px;
-  color: #7D7C84;
+  color: #7d7c84;
   font-weight: 400;
   line-height: 15px;
   padding-left: 10px;
 }
 
-.textarea-input{
+.textarea-inpu {
   margin-top: 20px;
   margin-bottom: 15px;
 }
@@ -363,7 +363,7 @@ label {
   border: 2px solid #dfdfe0;
   border-radius: 5px;
   resize: none;
-  height: 121px
+  height: 121px;
 }
 
 .textarea::placeholder {
@@ -379,12 +379,12 @@ label {
   width: 100%;
 }
 
-.form-button button {
+#form-button {
   display: block;
   width: 100%;
   background-color: #1a2236;
-  border:none;
-  color:white;
+  border: none;
+  color: white;
   padding: 14px 28px;
   cursor: pointer;
   text-align: center;
@@ -392,7 +392,7 @@ label {
 }
 
 #footer {
-  background: #1A2236;
+  background: #1a2236;
   height: 150px;
   display: flex;
   flex-direction: column;
@@ -405,24 +405,28 @@ label {
   justify-content: flex-start;
   align-items: baseline;
 }
+
 #footer .resume .paragraph {
-  color: #92DCDC;
+  color: #92dcdc;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   display: inline;
-  margin: 0px 16px;
+  margin: 0 16px;
 }
+
 #footer .resume .fa-arrow-up-right-from-square {
-  color: #92DCDC;
+  color: #92dcdc;
   font-size: 20px;
 }
+
 #footer .social-media-icon {
   display: flex;
   flex-wrap: nowrap;
   color: white;
   justify-content: space-evenly;
 }
+
 #footer .social-media-icon i {
   font-size: 20px;
 }
