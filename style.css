@@ -302,3 +302,85 @@ li {
 .skill {
   background-color: #febf52;
 }
+
+#form {
+  margin-top: 50px;
+  background-color: #F9F9FA;
+}
+
+.form-title {
+  margin-left: 16px;
+  margin-right: 14px;
+}
+
+.form-wrapper {
+  margin: 10px;
+}
+
+.full-input {
+  width: 100%;
+  margin-top: 8px;
+  display: inline-block;
+  padding: 3px;
+  border: 2px solid #DFDFE0;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.input {
+  outline: none;
+  border: none;
+  display:block;
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1a2236;
+  padding-left: 10px;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  color: #7D7C84;
+  font-weight: 400;
+  line-height: 15px;
+  padding-left: 10px;
+}
+
+.textarea-input{
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.textarea {
+  width: 100%;
+  border: 2px solid #dfdfe0;
+  border-radius: 5px;
+  resize: none;
+  height: 121px
+}
+
+.textarea::placeholder {
+  padding-left: 10px;
+  padding-top: 15px;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: Poppins, sans-serif;
+}
+
+.form-button {
+  margin-bottom: 65px;
+  width: 100%;
+}
+
+.form-button button {
+  display: block;
+  width: 100%;
+  background-color: #1a2236;
+  border:none;
+  color:white;
+  padding: 14px 28px;
+  cursor: pointer;
+  text-align: center;
+  margin-right: -10px;
+}
