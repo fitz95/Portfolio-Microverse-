@@ -89,3 +89,216 @@ body {
   color: white;
 }
 
+#titleimg {
+  background: url("./assets/img/projectimg.png");
+  height: 160px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 32px;
+  margin-bottom: 42px;
+}
+
+#projecttitle {
+  margin-left: 18px;
+}
+
+.projectimg img {
+  height: 195px;
+  width: 100%;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.project {
+  background-color: #1a2236;
+  color: white;
+  font-family: Poppins, sans-serif;
+}
+
+.projectdetails {
+  margin-left: 16px;
+  padding-bottom: 20px;
+}
+
+.projectdetails h3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.projectbuttons {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  margin-left: 0;
+  margin-bottom: 26px;
+  list-style-type: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.projectbuttons li {
+  background-color: #98dede;
+  padding: 7px;
+  margin-left: 0;
+  color: black;
+}
+
+.projectbuttons button {
+  background-color: #98dede;
+  color: black;
+  border: none;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  padding: 6px;
+}
+
+.viewbutton {
+  display: flex;
+  justify-content: space-around;
+  width: 55%;
+  color: white;
+  border: 2px solid white;
+  align-items: baseline;
+}
+
+.viewbutton i {
+  width: 20.57px;
+  height: 15.35px;
+}
+
+.grid-item {
+  background-color: #1c528a;
+  padding-bottom: 53px;
+  padding-left: 50px;
+  position: 50px;
+  font-size: 30px;
+  color: white;
+  font-family: Poppins, sans-serif;
+  height: 286px;
+}
+
+.grid-item h2 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 800;
+  padding-top: 25px;
+}
+
+.grid-item li {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.gridproject {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-color: #1a2236;
+}
+
+.gridimg {
+  grid-row: span 1;
+}
+
+.gridcontent {
+  grid-row: span 1;
+  margin-left: 16px;
+  color: white;
+  font-family: Poppins, sans-serif;
+}
+
+.gridcontent h3 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 16px;
+}
+
+#about h1 {
+  display: flex;
+  justify-content: start;
+}
+
+#about p {
+  margin-bottom: 32px;
+}
+
+.aboutbtn button {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #1a2236;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  cursor: pointer;
+}
+
+.aboutbtn i {
+  transform: rotate(90deg);
+}
+
+.aboutbtn button:hover {
+  opacity: 0.5;
+}
+
+.aboutbtn {
+  margin-bottom: 40px;
+}
+
+.workicon {
+  background-image: url("./assets/img/hashtag.png");
+  float: right;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 120px;
+  margin-right: -18px;
+  margin-top: 40px;
+  z-index: 0.9;
+}
+
+.workicon2 {
+  background-image: url("./assets/img/shape.png");
+  float: right;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 120px;
+  margin-right: -22px;
+  margin-top: 20px;
+  margin-bottom: -25px;
+  z-index: 0.9;
+}
+
+.workicon3 {
+  background-image: url("./assets/img/bulb.png");
+  float: right;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 120px;
+  margin-right: -18px;
+  margin-top: 13px;
+  z-index: 0.9;
+}
+
+.frame {
+  background-color: #e2505c;
+}
+
+.skill {
+  background-color: #febf52;
+}
