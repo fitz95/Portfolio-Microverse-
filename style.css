@@ -402,8 +402,10 @@ label {
 #footer .resume {
   display: flex;
   flex-wrap: nowrap;
+  column-gap: 16px;
   justify-content: flex-start;
   align-items: baseline;
+  margin-left: 16px;
 }
 
 #footer .resume .paragraph {
@@ -429,4 +431,8 @@ label {
 
 #footer .social-media-icon i {
   font-size: 20px;
+}
+
+@media screen, (min-width: 1300px) {
+  
 }
