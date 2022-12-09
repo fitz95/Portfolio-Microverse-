@@ -152,6 +152,7 @@ body {
   margin-left: 0;
   margin-bottom: 26px;
   list-style-type: none;
+  animation: 3s infinite alternate slidein;
 }
 
 ul,
@@ -748,6 +749,8 @@ label {
     margin-top: 30px;
     font-size: 14px;
     line-height: 21px;
+    animation-duration: 3s;
+    animation-name: slidein;
   }
 
   #second-about button {
@@ -881,10 +884,18 @@ label {
     justify-content: space-around;
     color: #1a2236;
     align-items: center;
+    transition: all ease-in-out 250ms;
   }
 
   #projectlaptop {
     width: 100%;
     height: 150px;
   }
+
+  .viewbutton-desktop:hover {
+    transition: all ease-in-out 250ms;
+    transform: scale(1.05);
+  }
 }
+
+
