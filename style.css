@@ -64,13 +64,14 @@ body {
 }
 
 .title h1 {
-  animation: dropdown 3s ease-in-out 1; 
+  animation: dropdown 3s ease-in-out 1;
 }
 
 @keyframes dropdown {
   from {
     margin-top: -70%;
   }
+
   to {
     margin-top: 0%;
   }
@@ -355,6 +356,11 @@ li {
   border-radius: 5px;
   background-color: white;
   margin-bottom: 8px;
+  transition: all 0.5s ease-out;
+}
+
+.full-input:hover {
+  transform: translateX(1.5%);
 }
 
 .input {
@@ -385,6 +391,11 @@ label {
 
 .textarea-input {
   margin-bottom: 15px;
+  transition: all 0.5s ease-out;
+}
+
+.textarea-input:hover {
+  transform: translateX(1.5%);
 }
 
 .textarea {
