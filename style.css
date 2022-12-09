@@ -11,8 +11,13 @@ p {
 }
 
 @keyframes example {
-  from {opacity: 2;}
-  to {opacity: 0;}
+  from {
+    opacity: 2;
+  }
+
+  to {
+    opacity: 0;
+  }
 }
 
 .desktop-version {
@@ -371,12 +376,9 @@ li {
 }
 
 .full-input:hover {
-  transform: translateX(1.5%);
-}
-
-.full-input:hover {
   transition: all ease-in-out 250ms;
   transform: scale(1.05);
+  transform: translateX(1.5%);
 }
 
 .input {
