@@ -63,6 +63,19 @@ body {
   color: #1a2236;
 }
 
+.title h1 {
+  animation: dropdown 3s ease-in-out 1; 
+}
+
+@keyframes dropdown {
+  from {
+    margin-top: -70%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}
+
 #intro {
   margin-left: 2%;
 }
