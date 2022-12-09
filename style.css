@@ -1,4 +1,3 @@
-
 body {
   background-color: white;
   margin-top: 0;
@@ -85,14 +84,16 @@ body {
   margin-top: 35px;
   transition: all 0.5s ease-in-out;
 }
+
 .button:hover {
   transform: scale(1.05);
 }
+
 .intro-desktop-image {
   display: none;
 }
 
-.dot-image{
+.dot-image {
   display: none;
 }
 
@@ -447,55 +448,57 @@ label {
 #footer .social-media-icon i {
   font-size: 20px;
 }
-@media screen and (min-width: 768px) {
 
-  .mobile-version{
+.desktopversion {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-version {
     display: none;
   }
-  .desktop-version{
-    display: unset ;
+
+  .desktop-version {
+    display: unset;
   }
-  
+
   .nav-list {
     display: flex;
-    gap:5%;
+    gap: 5%;
     justify-content: center;
     list-style: none;
     align-items: center;
     padding: 10px;
     position: sticky;
   }
-  
-  .desktop-version {
-    position: sticky;
-    height: 100px;
-    width: 100%;
-  }
 
   .nav-list > * {
-    font: Poppins;
+    font: Poppins, sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    color: #1A2236;
+    color: #1a2236;
   }
-  
+
   a {
-    color: #1A2236;
+    color: #1a2236;
     text-decoration: none;
   }
-  
+
   a:hover {
-      color: #1A2236; 
-      text-decoration:none; 
-      cursor:pointer;  
+    color: #1a2236;
+    text-decoration: none;
+    cursor: pointer;
   }
+
   .active {
-    text-decoration: underline
-    }
+    text-decoration: underline;
+  }
+
   li:hover {
-    text-decoration: underline
-    }
+    text-decoration: underline;
+  }
+
   .intro-desktop-image {
     display: unset;
   }
@@ -510,7 +513,7 @@ label {
     width: 100%;
     height: 620px;
   }
-  
+
   .grid-item1 {
     display: flex;
     flex-direction: column;
@@ -528,22 +531,23 @@ label {
     height: 150px;
     width: 150px;
   }
+
   .grid-item1 .title {
     margin-left: 60px;
     width: 80%;
   }
 
-  .grid-item1 .title h1{
+  .grid-item1 .title h1 {
     font-size: 50px;
     line-height: 50px;
   }
-  
+
   .grid-item1 .paragraph {
     margin-left: 60px;
     width: 70%;
   }
 
-  .grid-item1 .paragraph p{
+  .grid-item1 .paragraph p {
     font-size: 14px;
     line-height: 21px;
   }
@@ -553,11 +557,11 @@ label {
     width: 40%;
   }
 
-  #titleimg{
+  #titleimg {
     display: none;
   }
 
-  #project-title{
+  #project-title {
     display: none;
   }
 
@@ -568,9 +572,9 @@ label {
   #project .projectgrid {
     display: grid;
     gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  
+
   #project .projectgrid .grid2 {
     grid-column: span 3;
   }
@@ -595,11 +599,11 @@ label {
     height: 205px;
   }
 
-  #project{
+  #project {
     display: inline;
   }
-  
-  #project .mixedgrid{
+
+  #project .mixedgrid {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
@@ -607,16 +611,14 @@ label {
     align-items: baseline;
   }
 
-  #detailsproject{
+  #detailsproject {
     width: 33%;
     height: 100%;
     margin-top: 40px;
     align-self: flex-start;
   }
 
-
-
-  #laptopimage{
+  #laptopimage {
     width: 100%;
     height: 100%;
   }
@@ -627,12 +629,8 @@ label {
     margin-bottom: 0;
   }
 
-  .mixedgrid .projectimg{
+  .mixedgrid .projectimg {
     width: 33%;
-    height: 80%;
-  }
-
-  #laptopimage {
     height: 80%;
   }
 
@@ -641,8 +639,7 @@ label {
     height: 100%;
   }
 
-
-  #project .mixedgrid .project{
+  #project .mixedgrid .project {
     height: 100%;
   }
 
@@ -651,12 +648,12 @@ label {
   }
 
   #projectdetails ul {
-   font-size: 12px;
-   margin-bottom: 5px;
+    font-size: 12px;
+    margin-bottom: 5px;
   }
 
   #projectdetails .viewbutton {
-    font-size:12px ;
+    font-size: 12px;
   }
 
   #second-img {
@@ -677,15 +674,15 @@ label {
     margin-top: -5px;
   }
 
-  #projectimg3{
+  #projectimg3 {
     width: 15%;
   }
 
-  #projectimg4{
+  #projectimg4 {
     width: 10%;
   }
 
-  #fourth-img{
+  #fourth-img {
     width: 55%;
     display: flex;
     justify-content: space-between;
@@ -696,8 +693,7 @@ label {
     width: 33%;
   }
 
-  #fifth-img img
-  {
+  #project .mixedgrid #fifth-img img {
     width: 100%;
   }
 
@@ -721,7 +717,7 @@ label {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 0
+    gap: 0;
   }
 
   .flex-dot {
@@ -735,8 +731,8 @@ label {
     width: 80%;
   }
 
-  #second-about h1 {
-    font-family: 'Playfair Display';
+  #about-desktop #about-grid #second-about h1 {
+    font-family: 'Playfair Display', sans-serif;
     font-size: 100px;
     font-weight: 400;
     color: #1a2236;
@@ -754,17 +750,14 @@ label {
     margin-top: 42px;
     width: 200px;
   }
-  #form{
+
+  #form {
     display: none;
   }
 
-  .form-flex{
+  .form-flex {
     display: flex;
     justify-content: space-between;
-  }
-
-  #formtopicon {
-    width: 100px;
   }
 
   #triangleform {
@@ -783,7 +776,7 @@ label {
     top: -74px;
     margin-left: -74px;
   }
-  
+
   #diamond::after {
     content: '';
     position: absolute;
@@ -795,47 +788,43 @@ label {
     border-top-color: #e35461;
   }
 
-  #formtopicon{
+  #formtopicon {
     height: 150px;
     width: 220px;
   }
 
-  #formbuttomicon{
+  #formbuttomicon {
     height: 300px;
     width: 230px;
-
   }
 
-  .formdiv{
+  .formdiv {
     width: 50%;
     margin-bottom: 150px;
   }
 
-  .formdiv h1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
+  #formheader {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 100px;
     line-height: 100px;
-
   }
 
-  .formdiv p {
-    text-align:left;
+  #desktop-form .form-flex .formdiv p {
+    text-align: left;
     width: 90%;
     padding-bottom: 25px;
   }
 
-
-  .icon2-div{
-    align-self: flex-end;    
+  .icon2-div {
+    align-self: flex-end;
   }
 
-  
-  .form-content{
+  .form-content {
     width: 500px;
   }
 
-  .form-input-flex{
+  .form-input-flex {
     display: flex;
     column-gap: 10px;
     justify-content: space-between;
@@ -850,7 +839,7 @@ label {
     display: none;
   }
 
-  #footer-desktop{
+  #footer-desktop {
     background-color: #1a2236;
     padding-right: 160px;
   }
@@ -869,16 +858,15 @@ label {
     display: flex;
     align-items: center;
     column-gap: 10px;
-
     margin-left: 120px;
     margin-right: 160px;
   }
 
-  #footer-paragraph{
+  #footer-paragraph {
     color: white;
   }
 
   #social-media-icon {
-    column-gap:15px ;
+    column-gap: 15px;
   }
 }
