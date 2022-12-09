@@ -83,6 +83,10 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 35px;
+  transition: all 0.5s ease-in-out;
+}
+.button:hover {
+  transform: scale(1.05);
 }
 .intro-desktop-image {
   display: none;
