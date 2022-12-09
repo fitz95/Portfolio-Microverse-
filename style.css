@@ -345,6 +345,11 @@ li {
   margin-bottom: 8px;
 }
 
+.full-input:hover {
+  transition: all ease-in-out 250ms;
+  transform: scale(1.05);
+}
+
 .input {
   outline: none;
   border: none;
@@ -897,5 +902,3 @@ label {
     transform: scale(1.05);
   }
 }
-
-
