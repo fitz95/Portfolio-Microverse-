@@ -846,15 +846,19 @@ label {
     display: none;
   }
 
-  #footer-desktop {
+  #footer-desktop{
+    background-color: #1a2236;
+    padding-right: 160px;
+  }
+
+  .footer-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 160px;
-    padding-right: 160px;
-    background-color: #1a2236;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: white;
-    margin-bottom: 0;
+    width: 100%;
   }
 
   .resume-desktop {
