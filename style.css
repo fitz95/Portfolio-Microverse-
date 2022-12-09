@@ -648,7 +648,6 @@ label {
   }
 
   #projectdetails ul {
-    font-size: 12px;
     margin-bottom: 5px;
   }
 
@@ -663,6 +662,11 @@ label {
   #projectimg1 {
     width: 100%;
     margin-top: -5px;
+  }
+
+  .projectimg-desktop {
+    width: 100%;
+    height: fit-content;
   }
 
   #third-img {
@@ -868,5 +872,19 @@ label {
 
   #social-media-icon {
     column-gap: 15px;
+  }
+
+  .viewbutton-desktop {
+    width: 212px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    color: #1a2236;
+    align-items: center;
+  }
+
+  #projectlaptop {
+    width: 100%;
+    height: 150px;
   }
 }
