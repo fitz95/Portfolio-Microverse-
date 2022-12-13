@@ -302,6 +302,7 @@ li {
 
 .aboutbtn button:hover {
   opacity: 0.5;
+  color: #e2505c;
 }
 
 .aboutbtn {
