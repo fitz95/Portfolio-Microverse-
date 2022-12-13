@@ -5,6 +5,21 @@ body {
   margin-right: 0;
 }
 
+p {
+  animation-name: example;
+  animation-duration: 2s;
+}
+
+@keyframes example {
+  from {
+    opacity: 2;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 .desktop-version {
   display: none;
 }
@@ -61,6 +76,20 @@ body {
   font-size: 40px;
   line-height: 150%;
   color: #1a2236;
+}
+
+.title h1 {
+  animation: dropdown 3s ease-in-out 1;
+}
+
+@keyframes dropdown {
+  from {
+    margin-top: -70%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
 }
 
 #intro {
@@ -152,6 +181,7 @@ body {
   margin-left: 0;
   margin-bottom: 26px;
   list-style-type: none;
+  animation: 3s infinite alternate slidein;
 }
 
 ul,
@@ -342,6 +372,13 @@ li {
   border-radius: 5px;
   background-color: white;
   margin-bottom: 8px;
+  transition: all 0.5s ease-out;
+}
+
+.full-input:hover {
+  transition: all ease-in-out 250ms;
+  transform: scale(1.05);
+  transform: translateX(1.5%);
 }
 
 .input {
@@ -372,6 +409,11 @@ label {
 
 .textarea-input {
   margin-bottom: 15px;
+  transition: all 0.5s ease-out;
+}
+
+.textarea-input:hover {
+  transform: translateX(1.5%);
 }
 
 .textarea {
@@ -748,6 +790,8 @@ label {
     margin-top: 30px;
     font-size: 14px;
     line-height: 21px;
+    animation-duration: 3s;
+    animation-name: slidein;
   }
 
   #second-about button {
@@ -881,10 +925,16 @@ label {
     justify-content: space-around;
     color: #1a2236;
     align-items: center;
+    transition: all ease-in-out 250ms;
   }
 
   #projectlaptop {
     width: 100%;
     height: 150px;
+  }
+
+  .viewbutton-desktop:hover {
+    transition: all ease-in-out 250ms;
+    transform: scale(1.05);
   }
 }
