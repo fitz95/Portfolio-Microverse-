@@ -63,7 +63,9 @@ VS Code
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-No deploy version
+You can see a Live Version of this Portfolio Page deployed with Github pages on the Link below
+
+**git https://fitz95.github.io/Portfolio-Microverse-/.**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
