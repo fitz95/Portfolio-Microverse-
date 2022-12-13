@@ -63,7 +63,7 @@ VS Code
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> You can see a live Version of this site on the Link below 
+> You can see a live Version of this site deployed with github pages on the Link below
 
 **git https://fitz95.github.io/Portfolio-Microverse-/.**
 
