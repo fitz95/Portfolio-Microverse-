@@ -596,7 +596,7 @@ label {
 
   .active {
     text-decoration: underline;
-    background-color: black;
+    color: black;
   }
 
   li:hover {
