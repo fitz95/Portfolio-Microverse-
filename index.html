@@ -23,27 +23,41 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
   </head>
 
   <body>
     <header>
-      <nav class="mobile-version">
+      <nav class="mobile-version" id="mobile-nav">
         <div class="menu">
           <div class="shape">
             <div id="triangle"></div>
             <div id="diamond"></div>
           </div>
           <div>
-            <img id="menuimg" src="./assets/img/menu.png" alt="square" />
+            <button class="hamburger" id="menuimg" >
+              <i class="fa-sharp fa-solid fa-bars  fa-3x " id="hamburgericon"></i>
+            </button>
           </div>
         </div>
       </nav>
-      <nav class="desktop-version">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closeicon" ><i class="closeIcon material-icons  fa-3x" id="close-icon">close</i></a>
+        <div class="overlay-content">
+          <a href="#intro" onclick="closeNav()">Hello</a>
+          <a href="#projects" onclick="closeNav()">Portfolio</a>
+          <a href="#about" onclick="closeNav()">About</a>
+          <a href="#form" onclick="closeNav()">Contact</a>
+        </div>
+      </div>
+
+      <nav class="desktop-version" id="desktopversion">
         <ul class="nav-list">
-            <li><a class="active" href="#">Hello</a></li>
-            <li><a href="#project">Portfolio</a></li>
-            <li><a href="#about-desktop">About</a></li>
-            <li><a href="#desktop-form">Contact</a></li>
+            <li class="links"><a class="active" href="#">Hello</a></li>
+            <li class="links"><a href="#project">Portfolio</a></li>
+            <li class="links"><a href="#about-desktop">About</a></li>
+            <li class="links"><a href="#desktop-form">Contact</a></li>
         </ul>
     </nav>
     </header>
@@ -455,5 +469,6 @@
       </div>
          </section>
     </main>
+    <script type="text/javascript" src="myScript.js"></script>
   </body>
 </html>

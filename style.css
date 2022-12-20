@@ -94,6 +94,7 @@ p {
 
 #intro {
   margin-left: 2%;
+  margin-top: 85px;
 }
 
 .paragraph {
@@ -494,6 +495,65 @@ label {
 
 .desktopversion {
   display: none;
+}
+
+.hamburger {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger .closeIcon {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  transition: 0.6s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f9f9fa;
+  display: block;
+  transition: 0.5s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #1c528a;
+}
+
+.overlay .closeIcon {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+}
+
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -937,5 +997,13 @@ label {
   .viewbutton-desktop:hover {
     transition: all ease-in-out 250ms;
     transform: scale(1.05);
+  }
+
+  #desktopversion {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
   }
 }
