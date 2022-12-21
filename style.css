@@ -514,27 +514,33 @@ label {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: white;
+
   overflow: hidden;
   transition: 0.6s;
 }
 
 .overlay-content {
-  position: relative;
-  top: 25%;
+  font: Poppins, sans-serif;
+  position:relative;
+  padding-top: 30px;
   width: 100%;
   text-align: center;
   margin-top: 40px;
+  line-height: 50px;
+  
 }
 
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 25px;
-  color: #f9f9fa;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 48px;
+  color: black;
   display: block;
   transition: 0.5s;
+  text-align: center;
 }
 
 .overlay a:hover,
@@ -555,6 +561,29 @@ label {
   background-color: white;
   overflow: hidden;
 }
+
+.mobile-menu-navbar {
+  display: flex;
+  row-gap: 30px;
+}
+
+.mobile-menu-navbar img {
+  width: 80%;
+  height: 150px;
+}
+
+.mobile-navbar-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.mobile-navbar-footer img {
+  height: 200px;
+  width: 100%;
+}
+
 
 @media screen and (min-width: 768px) {
   .mobile-version {
