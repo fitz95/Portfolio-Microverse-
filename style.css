@@ -515,20 +515,18 @@ label {
   top: 0;
   left: 0;
   background-color: white;
-
   overflow: hidden;
   transition: 0.6s;
 }
 
 .overlay-content {
   font: Poppins, sans-serif;
-  position:relative;
+  position: relative;
   padding-top: 30px;
   width: 100%;
   text-align: center;
   margin-top: 40px;
   line-height: 50px;
-  
 }
 
 .overlay a {
@@ -583,7 +581,6 @@ label {
   height: 200px;
   width: 100%;
 }
-
 
 @media screen and (min-width: 768px) {
   .mobile-version {

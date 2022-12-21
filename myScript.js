@@ -21,7 +21,6 @@ function activeMenu() {
     li[0].classList.add('active');
   }
   li.forEach((item) => item.classList.remove('active'));
-  // li[len].classList.add('active');
 }
 activeMenu();
 window.addEventListener('scroll', activeMenu);
