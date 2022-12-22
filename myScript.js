@@ -82,20 +82,6 @@ const project4 = document.getElementById('proj4');
 const project5 = document.getElementById('proj5');
 const project6 = document.getElementById('proj6');
 const mobilePopup = document.getElementById('mobile-popup');
-// function closePopup() {
-//   // overlay.style.display = 'none';
-//   popup.style.display = 'none';
-// }
-
-// function openPopup() {
-//   // overlay.style.display = 'block';
-//   popup.style.display = 'block';
-// }
-
-// buttonsArray.forEach((item) => {
-//   item.addEventListener('click', openPopup);
-// });
-// closePopupButton.addEventListener('click', closePopup);
 
 function project1content() {
   mobilePopup.innerHTML = `
