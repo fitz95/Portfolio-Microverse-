@@ -82,20 +82,6 @@ const project4 = document.getElementById('proj4');
 const project5 = document.getElementById('proj5');
 const project6 = document.getElementById('proj6');
 const mobilePopup = document.getElementById('mobile-popup');
-// function closePopup() {
-//   // overlay.style.display = 'none';
-//   popup.style.display = 'none';
-// }
-
-// function openPopup() {
-//   // overlay.style.display = 'block';
-//   popup.style.display = 'block';
-// }
-
-// buttonsArray.forEach((item) => {
-//   item.addEventListener('click', openPopup);
-// });
-// closePopupButton.addEventListener('click', closePopup);
 
 function project1content() {
   mobilePopup.innerHTML = `
@@ -578,8 +564,8 @@ function project3dcontent() {
         <img src=${arr[4].image[2]}  class="subpopupimages1" alt="project1" />
         <img src=${arr[4].image[3]}  class="subpopupimages1" alt="project1" />
       </div>
-      <div class="popupcontentcon" id='desktopdp'>
-        <p class="paragraph" id='popupdp'>
+      <div class="popupcontentcon" >
+        <p class="paragraph" id='desktopdp'>
         ${arr[4].description}
         </p>
         <div class="popupbtndiv">
@@ -639,8 +625,8 @@ function project4dcontent() {
         <img src=${arr[2].image[2]}  class="subpopupimages1" alt="project1" />
         <img src=${arr[2].image[3]}  class="subpopupimages1" alt="project1" />
       </div>
-      <div class="popupcontentcon" id='desktopdp'>
-        <p class="paragraph">
+      <div class="popupcontentcon">
+        <p class="paragraph" id='desktopdp'>
         ${arr[2].description}
         </p>
         <div class="popupbtndiv">
