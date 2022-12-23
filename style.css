@@ -608,7 +608,7 @@ label {
   z-index: 100;
 }
 
-#popup {
+.popup {
   display: none;
   position: fixed;
   background: #fff;
@@ -673,6 +673,10 @@ label {
   padding-right: 15px;
   font-family: Poppins, sans-serif;
   font-size: 10px;
+}
+
+.desktoppop{
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -1140,7 +1144,7 @@ label {
     overflow-x: hidden;
   }
 
-  #popupdesktop {
+  .popupdesktop {
     display: none;
     position: fixed;
     top: 0%;
@@ -1227,6 +1231,7 @@ label {
   .slider-control {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 200px;
   }
 
   .controlss {
@@ -1246,7 +1251,8 @@ label {
   }
 
   #desktopdp {
-    font-size: 18px;
-    line-height: 22px;
+    font-family: Poppins, sans-serif;
+    color: #1a2236;
+    margin-bottom: 25px;
   }
 }

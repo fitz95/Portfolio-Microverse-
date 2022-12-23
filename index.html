@@ -60,6 +60,8 @@
     </nav>
   </header>
   <main>
+
+     <!--Intro section -->
     <section id="intro" class="mobile">
       <div class="grid-item1">
         <div class="title">
@@ -90,117 +92,14 @@
         <h1 class="title">Projects</h1>
       </div>
     </section>
-    <section id="mobile-popup">
 
-    </section>
+    
+   
+   
 
-    <!-- projects start here -->
-    <section id="projects" class="mobile">
-      <div class="project">
-        <div class="projectimg">
-          <img src="./assets/img/project1.png" alt="project1" />
-        </div>
-        <div class="projectdetails">
-          <h3>Project name goes here</h3>
-          <ul class="projectbuttons">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-          <div class="viewbutton" id="proj1">
-            <p>See this project</p>
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
-        </div>
-      </div>
-      <div class="project">
-        <div class="projectimg">
-          <img src="./assets/img/project6.png" alt="project1" />
-        </div>
-        <div class="projectdetails">
-          <h3>Project name goes here</h3>
-          <ul class="projectbuttons">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-          <div class="viewbutton" id="proj2">
-            <p>See this project</p>
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
-        </div>
-      </div>
-      <div class="project">
-        <div class="projectimg">
-          <img src="./assets/img/project2.png" alt="project1" />
-        </div>
-        <div class="projectdetails">
-          <h3>Project name goes here</h3>
-          <ul class="projectbuttons">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-          <div class="viewbutton" id="proj3">
-            <p>See this project</p>
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
-        </div>
-      </div>
-      <div class="project">
-        <div class="projectimg">
-          <img src="./assets/img/project3.png" alt="project1" />
-        </div>
-        <div class="projectdetails">
-          <h3>Project name goes here</h3>
-          <ul class="projectbuttons">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-          <div class="viewbutton" id="proj4">
-            <p>See this project</p>
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
-        </div>
-      </div>
-      <div class="project">
-        <div class="projectimg">
-          <img src="./assets/img/project4.png" alt="project1" />
-        </div>
-        <div class="projectdetails">
-          <h3>Project name goes here</h3>
-          <ul class="projectbuttons">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-          <div class="viewbutton" id="proj5">
-            <p>See this project</p>
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
-        </div>
-      </div>
-      <div class="gridproject">
-        <div class="gridimg projectimg">
-          <img src="./assets/img/project5.png" alt="project1" />
-        </div>
-        <div class="gridcontent">
-          <h3>Project name goes here</h3>
-          <ul class="projectbuttons">
-            <li>HTML/CSS</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-          </ul>
-          <div class="viewbutton" id="proj6">
-            <p>See this project</p>
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- projects end here -->
-
+    <!-- projects start here desktop cannot 
+      loop like in the mobile version because
+      the design of the desktop is really different  -->
     <section id='project' class="desktop-version">
       <div class="projectgrid">
         <div class="grid1">
@@ -218,7 +117,7 @@
               <li>Ruby on Rails</li>
               <li>JavaScript</li>
             </ul>
-            <div class="viewbutton-desktop" id="project-popup" >
+            <div class="viewbutton-desktop popupdesktopbtn" id="project-popup" >
               <p>See this project</p>
               <i class="fa-solid fa-arrow-right"></i>
             </div>
@@ -240,20 +139,20 @@
               <li>Ruby on Rails</li>
               <li>+1</li>
             </ul>
-            <div class="viewbutton-desktop" id="project-popup2">
+            <div class="viewbutton-desktop popupdesktopbtn" id="project-popup2">
               <p>See this project</p>
               <i class="fa-solid fa-arrow-right"></i>
             </div>
           </div>
           <div class="projectimg-desktop">
-            <img id="projectlaptop" src="./assets/img/project4.png" alt="laptop">
+            <img id="projectlaptop"  class="popupdesktopbtn" src="./assets/img/project4.png" alt="laptop">
           </div>
         </div>
         <div id="second-img">
-          <img id='projectimg1' src="./assets/img/laptop.png" alt="project1" />
+          <img id='projectimg1' class="popupdesktopbtn"src="./assets/img/laptop.png" alt="project1" />
         </div>
         <div id="third-img">
-          <img id='projectimg2' src="./assets/img/shapes2.png" alt="project1" />
+          <img id='projectimg2' class="popupdesktopbtn" src="./assets/img/shapes2.png" alt="project1" />
         </div>
         <div id="fourth-img">
           <img id='projectimg3' src="./assets/img/icon2.png" alt="project1" />
@@ -266,9 +165,18 @@
       </div>
 
     </section>
+    <!-- projects end here desktop -->
+
+    <section id="projects" class="mobile">
+      <!-- projects mobile section -->
+     </section>
+     
+    <!-- desktop pop up-->
     <section class="desktop-version" id="popupdesktopd">
-      
     </section>
+
+
+    <!-- about section mobile -->
     <section id="about" class="mobile">
       <div>
         <h1 class="title">About</h1>
@@ -317,6 +225,11 @@
         <div class="workicon3"></div>
       </div>
     </section>
+
+    <!--  end about section mobile -->
+
+    <!-- start about section desktop -->
+
 
     <section id="about-desktop" class="desktop-version">
       <div id="about-grid">
@@ -377,6 +290,10 @@
 
       </div>
     </section>
+    <!-- end about section desktop -->
+
+    <!-- start form section mobile -->
+
     <section id="form" class="mobile">
       <nav>
         <div class="menu">
@@ -415,6 +332,10 @@
         </form>
       </div>
     </section>
+
+     <!-- end  form section mobile -->
+
+     <!-- start  form section desktop -->
     <section id="desktop-form" class="desktop-version">
       <nav>
         <div class="menu">
