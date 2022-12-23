@@ -1,107 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Portfolio Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Playfair Display"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   
-  </head>
 
-  <body>
-    <header>
-      <nav class="mobile-version" id="mobile-nav">
-        <div class="menu">
-          <div class="shape">
-            <div id="triangle"></div>
-            <div id="diamond"></div>
-          </div>
-          <div>
-            <button class="hamburger" id="menuimg" >
-              <i class="fa-sharp fa-solid fa-bars  fa-3x " id="hamburgericon"></i>
-            </button>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Portfolio Site</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <nav class="mobile-version" id="mobile-nav">
+      <div class="menu">
+        <div class="shape">
+          <div id="triangle"></div>
+          <div id="diamond"></div>
         </div>
-      </nav>
-      <div id="myNav" class="overlay">
-        <div class="mobile-menu-navbar">
-        <img src="./assets/img/navbar-mobile.png" alt="project1" id="mobile-menu-img" />
-        <a href="javascript:void(0)" class="closeicon" ><i class="closeIcon material-icons  fa-3x" id="close-icon">close</i></a>
+        <div>
+          <button class="hamburger" id="menuimg">
+            <i class="fa-sharp fa-solid fa-bars  fa-3x " id="hamburgericon"></i>
+          </button>
         </div>
-        <div class="overlay-content">
-          <a href="#intro" onclick="closeNav()">Hello</a>
-          <a href="#projects" onclick="closeNav()">Portfolio</a>
-          <a href="#about" onclick="closeNav()">About</a>
-          <a href="#form" onclick="closeNav()">Contact</a>
-        </div>
-        <div class="mobile-navbar-footer">
-        <img src="./assets/img/navbar-footer.png" alt="project1" />
-       </div>
       </div>
-
-      <nav class="desktop-version" id="desktopversion">
-        <ul class="nav-list">
-            <li class="links active"><a href="#">Hello</a></li>
-            <li class="links"><a href="#project">Portfolio</a></li>
-            <li class="links"><a href="#about-desktop">About</a></li>
-            <li class="links"><a href="#desktop-form">Contact</a></li>
-        </ul>
     </nav>
-    </header>
-    <main>
-      <section id="intro" class="mobile">
-        <div class="grid-item1">
-          <div class="title">
-            <h1>Nsong Fitz Gerald</h1>
-          </div>
-          <div class="paragraph">
-            <p>
-              Hello! I am a software developer! I can help you build a product,
-              feature or website. Taka a look of my works. If you like what you
-              see and have a project you need coded, don’t hesitate and contact
-              me immediately.
-            </p>
-          </div>
-          <div class="button">
-            <button id="introbutton">Start collaboration</button>
-          </div>
-          <div class="dot-image">
-            <img src="./assets/img/image_dots.png" alt="project1" />
-          </div>
+    <div id="myNav" class="overlay">
+      <div class="mobile-menu-navbar">
+        <img src="./assets/img/navbar-mobile.png" alt="project1" id="mobile-menu-img" />
+        <a href="javascript:void(0)" class="closeicon"><i class="closeIcon material-icons  fa-3x"
+            id="close-icon">close</i></a>
+      </div>
+      <div class="overlay-content">
+        <a href="#intro" onclick="closeNav()">Hello</a>
+        <a href="#project-title" onclick="closeNav()">Portfolio</a>
+        <a href="#about" onclick="closeNav()">About</a>
+        <a href="#form" onclick="closeNav()">Contact</a>
+      </div>
+      <div class="mobile-navbar-footer">
+        <img src="./assets/img/navbar-footer.png" alt="project1" />
+      </div>
+    </div>
+
+    <nav class="desktop-version" id="desktopversion">
+      <ul class="nav-list">
+        <li class="links active"><a href="#">Hello</a></li>
+        <li class="links"><a href="#project">Portfolio</a></li>
+        <li class="links"><a href="#about-desktop">About</a></li>
+        <li class="links"><a href="#desktop-form">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+     <!--Intro section -->
+    <section id="intro" class="mobile">
+      <div class="grid-item1">
+        <div class="title">
+          <h1>Nsong Fitz Gerald</h1>
         </div>
-        <div class="intro-desktop-image">
-          <img src="./assets/img/introimage.png" alt="project1" />
+        <div class="paragraph">
+          <p>
+            Hello! I am a software developer! I can help you build a product,
+            feature or website. Taka a look of my works. If you like what you
+            see and have a project you need coded, don’t hesitate and contact
+            me immediately.
+          </p>
         </div>
-      </section>
-      <section id="project-title">
-        <div id="titleimg"></div>
-        <div id="projecttitle">
+        <div class="button">
+          <button id="introbutton">Start collaboration</button>
+        </div>
+        <div class="dot-image">
+          <img src="./assets/img/image_dots.png" alt="project1" />
+        </div>
+      </div>
+      <div class="intro-desktop-image">
+        <img src="./assets/img/introimage.png" alt="project1" />
+      </div>
+    </section>
+    <section id="project-title">
+      <div id="titleimg"></div>
+      <div id="projecttitle">
+        <h1 class="title">Projects</h1>
+      </div>
+    </section>
+
+    
+   
+   
+
+    <!-- projects start here desktop cannot 
+      loop like in the mobile version because
+      the design of the desktop is really different  -->
+    <section id='project' class="desktop-version">
+      <div class="projectgrid">
+        <div class="grid1">
           <h1 class="title">Projects</h1>
+          <img src="./assets/img/image_dots.png" alt="project1" />
         </div>
-      </section>
-      <section id="projects" class="mobile">
-        <div class="project">
+        <div class="project grid2">
           <div class="projectimg">
-            <img src="./assets/img/project1.png" alt="project1" />
+            <img src="./assets/img/desktop.png" alt="project1" />
           </div>
           <div class="projectdetails">
             <h3>Project name goes here</h3>
@@ -110,346 +117,299 @@
               <li>Ruby on Rails</li>
               <li>JavaScript</li>
             </ul>
-            <div class="viewbutton">
+            <div class="viewbutton-desktop popupdesktopbtn" id="project-popup" >
               <p>See this project</p>
               <i class="fa-solid fa-arrow-right"></i>
             </div>
           </div>
         </div>
-        <div class="project" >
-          <div class="projectimg">
-            <img src="./assets/img/project2.png" alt="project1" />
-          </div>
-          <div class="projectdetails">
-            <h3>Project name goes here</h3>
+      </div>
+      <div class="mixedgrid">
+        <div class="firstimage">
+          <img src="./assets/img/project6.png" id="laptopimage" alt="project6" />
+        </div>
+        <div class="projectimg">
+          <img id='shapeimages' src="./assets/img/projectimage.png" alt="dots" />
+        </div>
+        <div class="project" id="detailsproject">
+          <div class="projectdetails" id="projectdetails">
+            <h4>Project name goes here</h4>
             <ul class="projectbuttons">
               <li>HTML/CSS</li>
               <li>Ruby on Rails</li>
-              <li>JavaScript</li>
+              <li>+1</li>
             </ul>
-            <div class="viewbutton">
+            <div class="viewbutton-desktop popupdesktopbtn" id="project-popup2">
               <p>See this project</p>
-              <i class="fa-solid fa-arrow-right" ></i>
+              <i class="fa-solid fa-arrow-right"></i>
             </div>
           </div>
-        </div>
-        <div class="project">
-          <div class="projectimg">
-            <img src="./assets/img/project3.png" alt="project1" />
+          <div class="projectimg-desktop">
+            <img id="projectlaptop"  class="popupdesktopbtn" src="./assets/img/project4.png" alt="laptop">
           </div>
-          <div class="projectdetails">
-            <h3>Project name goes here</h3>
-            <ul class="projectbuttons">
-              <li>HTML/CSS</li>
-              <li>Ruby on Rails</li>
-              <li>JavaScript</li>
+        </div>
+        <div id="second-img">
+          <img id='projectimg1' class="popupdesktopbtn"src="./assets/img/laptop.png" alt="project1" />
+        </div>
+        <div id="third-img">
+          <img id='projectimg2' class="popupdesktopbtn" src="./assets/img/shapes2.png" alt="project1" />
+        </div>
+        <div id="fourth-img">
+          <img id='projectimg3' src="./assets/img/icon2.png" alt="project1" />
+          <img id='projectimg4' src="./assets/img/icon3.png" alt="project1" />
+        </div>
+        <div id="fifth-img">
+          <img id='projectimg4' src="./assets/img/icon4.png" alt="project1" />
+        </div>
+
+      </div>
+
+    </section>
+    <!-- projects end here desktop -->
+
+    <section id="projects" class="mobile">
+      <!-- projects mobile section -->
+     </section>
+     
+    <!-- desktop pop up-->
+    <section class="desktop-version" id="popupdesktopd">
+    </section>
+
+
+    <!-- about section mobile -->
+    <section id="about" class="mobile">
+      <div>
+        <h1 class="title">About</h1>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ea eiusmod
+        </p>
+        <div class="aboutbtn">
+          <button>
+            Get my CV <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          </button>
+        </div>
+      </div>
+      <div class="grid-item">
+        <h2>Languages</h2>
+        <ul>
+          <li>Javascript(ES5/ES6)</li>
+          <li>Ruby</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+        <div class="workicon"></div>
+      </div>
+      <div class="grid-item frame">
+        <h2>Frameworks</h2>
+        <ul>
+          <li>Boostrap</li>
+          <li>Ruby on rails</li>
+          <li>Rspec</li>
+          <li>Capibara</li>
+          <li>Selenium</li>
+        </ul>
+        <div class="workicon2"></div>
+      </div>
+      <div class="grid-item skill">
+        <h2>Skills</h2>
+        <ul>
+          <li>Codekit</li>
+          <li>Codepen</li>
+          <li>GitHub</li>
+          <li>GitLab</li>
+          <li>Terminal</li>
+        </ul>
+        <div class="workicon3"></div>
+      </div>
+    </section>
+
+    <!--  end about section mobile -->
+
+    <!-- start about section desktop -->
+
+
+    <section id="about-desktop" class="desktop-version">
+      <div id="about-grid">
+        <div id="first-grid">
+          <div class="grid-item">
+            <h2>Languages</h2>
+            <ul>
+              <li>Javascript(ES5/ES6)</li>
+              <li>Ruby</li>
+              <li>HTML</li>
+              <li>CSS</li>
             </ul>
-            <div class="viewbutton">
-              <p>See this project</p>
-              <i class="fa-solid fa-arrow-right" ></i>
-            </div>
+            <div class="workicon"></div>
           </div>
-        </div>
-        <div class="project">
-          <div class="projectimg">
-            <img src="./assets/img/project4.png" alt="project1" />
-          </div>
-          <div class="projectdetails">
-            <h3>Project name goes here</h3>
-            <ul class="projectbuttons">
-              <li>HTML/CSS</li>
-              <li>Ruby on Rails</li>
-              <li>JavaScript</li>
+          <div class="grid-item frame">
+            <h2>Frameworks</h2>
+            <ul>
+              <li>Boostrap</li>
+              <li>Ruby on rails</li>
+              <li>Rspec</li>
+              <li>Capibara</li>
+              <li>Selenium</li>
             </ul>
-            <div class="viewbutton">
-              <p>See this project</p>
-              <i class="fa-solid fa-arrow-right" ></i>
-            </div>
+            <div class="workicon2"></div>
           </div>
-        </div>
-        <div class="gridproject">
-          <div class="gridimg projectimg">
-            <img src="./assets/img/project5.png" alt="project1" />
-          </div>
-          <div class="gridcontent">
-            <h3>Project name goes here</h3>
-            <ul class="projectbuttons">
-              <li>HTML/CSS</li>
-              <li>Ruby on Rails</li>
-              <li>JavaScript</li>
+          <div class="grid-item skill">
+            <h2>Skills</h2>
+            <ul>
+              <li>Codekit</li>
+              <li>Codepen</li>
+              <li>GitHub</li>
+              <li>GitLab</li>
+              <li>Terminal</li>
             </ul>
-            <div class="viewbutton">
-              <p>See this project</p>
-              <i class="fa-solid fa-arrow-right" ></i>
-            </div>
+            <div class="workicon3"></div>
+          </div>
+          <div class="flex-dot">
+            <img id="grid-dot-image" src="./assets/img/image_dots_with_teal.png" alt="project1" />
           </div>
         </div>
-      </section>
 
-      <section  id='project' class="desktop-version">
-        <div class="projectgrid">
-          <div class="grid1">
-            <h1 class="title">Projects</h1>
-            <img src="./assets/img/image_dots.png" alt="project1" />
-          </div>
-          <div class="project grid2">
-            <div class="projectimg">
-              <img src="./assets/img/desktop.png" alt="project1" />
-            </div>
-            <div class="projectdetails">
-              <h3>Project name goes here</h3>
-              <ul class="projectbuttons">
-                <li>HTML/CSS</li>
-                <li>Ruby on Rails</li>
-                <li>JavaScript</li>
-              </ul>
-              <div class="viewbutton-desktop">
-                <p>See this project</p>
-                <i class="fa-solid fa-arrow-right"></i>
-              </div>
+        <div id="second-about">
+          <div>
+            <h1 class="title">About</h1>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ea eiusmod
+            </p>
+            <div class="aboutbtn">
+              <button>
+                Get my CV <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              </button>
             </div>
           </div>
         </div>
-        <div class="mixedgrid">
-          <div class="firstimage">
-          <img src="./assets/img/project1.png" id="laptopimage" alt="project6" />
-          </div>
-          <div class="projectimg">
-            <img  id='shapeimages' src="./assets/img/projectimage.png" alt="dots" />
-          </div>
-          <div class="project"  id="detailsproject">
-            <div class="projectdetails" id="projectdetails" >
-              <h4>Project name goes here</h4>
-              <ul class="projectbuttons">
-                <li>HTML/CSS</li>
-                <li>Ruby on Rails</li>
-                <li>+1</li>
-              </ul>
-              <div class="viewbutton-desktop">
-                <p>See this project</p>
-                <i class="fa-solid fa-arrow-right"></i>
-              </div>
-            </div>
-            <div class="projectimg-desktop">
-              <img  id="projectlaptop" src="./assets/img/project4.png" alt="laptop">
-            </div>
-          </div>
-          <div id="second-img">
-            <img id='projectimg1' src="./assets/img/laptop.png" alt="project1" />
-          </div>
-          <div id="third-img">
-            <img id='projectimg2' src="./assets/img/shapes2.png" alt="project1" />
-          </div>
-          <div id="fourth-img">
-            <img id='projectimg3' src="./assets/img/icon2.png" alt="project1" />
-            <img id='projectimg4' src="./assets/img/icon3.png" alt="project1" />
-          </div>
-          <div id="fifth-img">
-            <img id='projectimg4' src="./assets/img/icon4.png" alt="project1" />
-          </div>
-          
-        </div>
-        
-      </section>
-      <section id="about" class="mobile">
-        <div>
-          <h1 class="title">About</h1>
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ea eiusmod
-          </p>
-          <div class="aboutbtn">
-            <button>
-              Get my CV <i class="fa-solid fa-arrow-right-to-bracket" ></i>
-            </button>
-          </div>
-        </div>
-        <div class="grid-item">
-          <h2>Languages</h2>
-          <ul>
-            <li>Javascript(ES5/ES6)</li>
-            <li>Ruby</li>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-          <div class="workicon"></div>
-        </div>
-        <div class="grid-item frame">
-          <h2>Frameworks</h2>
-          <ul>
-            <li>Boostrap</li>
-            <li>Ruby on rails</li>
-            <li>Rspec</li>
-            <li>Capibara</li>
-            <li>Selenium</li>
-          </ul>
-          <div class="workicon2"></div>
-        </div>
-        <div class="grid-item skill">
-          <h2>Skills</h2>
-          <ul>
-            <li>Codekit</li>
-            <li>Codepen</li>
-            <li>GitHub</li>
-            <li>GitLab</li>
-            <li>Terminal</li>
-          </ul>
-          <div class="workicon3"></div>
-        </div>
-      </section>
 
-      <section id="about-desktop" class="desktop-version">
-        <div id="about-grid">
-          <div id="first-grid">
-            <div class="grid-item">
-              <h2>Languages</h2>
-              <ul>
-                <li>Javascript(ES5/ES6)</li>
-                <li>Ruby</li>
-                <li>HTML</li>
-                <li>CSS</li>
-              </ul>
-              <div class="workicon"></div>
-            </div>
-            <div class="grid-item frame">
-              <h2>Frameworks</h2>
-              <ul>
-                <li>Boostrap</li>
-                <li>Ruby on rails</li>
-                <li>Rspec</li>
-                <li>Capibara</li>
-                <li>Selenium</li>
-              </ul>
-              <div class="workicon2"></div>
-            </div>
-            <div class="grid-item skill">
-              <h2>Skills</h2>
-              <ul>
-                <li>Codekit</li>
-                <li>Codepen</li>
-                <li>GitHub</li>
-                <li>GitLab</li>
-                <li>Terminal</li>
-              </ul>
-              <div class="workicon3"></div>
-            </div>
-            <div class="flex-dot" >
-              <img id="grid-dot-image" src="./assets/img/image_dots_with_teal.png" alt="project1" />
-            </div>
-          </div>
+      </div>
+    </section>
+    <!-- end about section desktop -->
 
-          <div id="second-about">
-            <div>
-              <h1 class="title">About</h1>
-              <p class="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ea eiusmod
-              </p>
-              <div class="aboutbtn">
-                <button>
-                  Get my CV <i class="fa-solid fa-arrow-right-to-bracket" ></i>
-                </button>
-              </div>
-            </div>
-          </div>
+    <!-- start form section mobile -->
 
+    <section id="form" class="mobile">
+      <nav>
+        <div class="menu">
+          <div class="shape">
+            <div id="triangle"></div>
+            <div id="diamond"></div>
+          </div>
         </div>
-      </section>
-      <section id="form" class="mobile">
-          <nav>
-            <div class="menu">
-              <div class="shape">
-                <div id="triangle"></div>
-                <div id="diamond"></div>
-              </div>
+      </nav>
+      <div class="form-title">
+        <h1 class="title">Get started</h1>
+        <p class="paragraph">
+          Hello! I am a software developer! I can help you build a product,
+          feature or website. Fill this form and lets work.
+        </p>
+        <form action="/my-handling-form-page" method="post">
+          <div class="form-wrapper">
+
+            <div class='full-input'><label for='name'> Your name</label>
+              <input class="input" id="name" type='text' name='name' required placeholder="Anastasiia"></input>
             </div>
-          </nav>
-          <div class="form-title">
-          <h1 class="title">Get started</h1>
+
+            <div class='full-input'><label for='email'> Your email</label>
+              <input class="input" id="email" type='email' name='email'></input>
+            </div>
+
+            <div class="textarea-input">
+              <textarea class="textarea" id="message" name="message"
+                placeholder="Enter your message here..."></textarea>
+            </div>
+
+            <div class="form-button">
+              <button id="form-button" type="submit">Start Collaboration</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+     <!-- end  form section mobile -->
+
+     <!-- start  form section desktop -->
+    <section id="desktop-form" class="desktop-version">
+      <nav>
+        <div class="menu">
+          <div class="shape">
+            <div id="triangleform"></div>
+            <div id="diamond"></div>
+          </div>
+        </div>
+      </nav>
+      <div class="form-flex">
+        <div class="icon-div">
+          <img id="formtopicon" src="./assets/img/form-shape.png" alt="shape" />
+        </div>
+        <div class="formdiv">
+          <h1 class="title" id="formheader">Get started</h1>
           <p class="paragraph">
             Hello! I am a software developer! I can help you build a product,
             feature or website. Fill this form and lets work.
           </p>
-          <form action="/my-handling-form-page" method="post">
+          <form action="https://formspree.io/f/xeqdylgv" method="post">
             <div class="form-wrapper">
 
-              <div class='full-input'><label for='name'> Your name</label>
-                <input class="input" id="name" type='text' name='name' required placeholder="Anastasiia"></input></div>
-              
-              <div class='full-input'><label for='email'> Your email</label>
-                <input class="input" id="email" type='email' name='email'></input></div>
-              
+              <div class="form-input-flex">
+                <div class='full-input'>
+                  <label for="name">Name</label>
+                  <input class="input" id="name" type='text' name='name' maxlength="30" required
+                    placeholder="Anastasiia"></input>
+                </div>
+
+                <div class='full-input'>
+                  <label for="email">email</label>
+                  <input class="input" id="email" type='email' required name='email'></input>
+                </div>
+              </div>
+
               <div class="textarea-input">
-                <textarea class="textarea" id="message" name="message" placeholder="Enter your message here..."></textarea>
+                <label for='name'> Message</label>
+                <textarea class="textarea" id="message" name="message" required maxlength="500"
+                  placeholder="Enter your message here..."></textarea>
               </div>
 
               <div class="form-button">
-                  <button id="form-button" type="submit">Start Collaboration</button>
+                <button id="form-button" type="submit">Start Collaboration</button>
               </div>
             </div>
           </form>
         </div>
-      </section>
-      <section id="desktop-form" class="desktop-version">
-        <nav>
-          <div class="menu">
-            <div class="shape">
-              <div id="triangleform"></div>
-              <div id="diamond"></div>
-            </div>
-          </div>
-        </nav>
-        <div class="form-flex">
-          <div class="icon-div">
-            <img id="formtopicon" src="./assets/img/form-shape.png" alt="shape" />
-          </div>
-          <div class="formdiv">
-            <h1 class="title" id="formheader">Get started</h1>
-          <p class="paragraph">
-            Hello! I am a software developer! I can help you build a product,
-            feature or website. Fill this form and lets work.
-          </p>
-            <form action="https://formspree.io/f/xeqdylgv" method="post">
-              <div class="form-wrapper">
+        <div class="icon2-div">
+          <img id="formbuttomicon" src="./assets/img/buttomicon.png" alt="shape" />
+        </div>
 
-                <div class="form-input-flex">
-                  <div class='full-input'>
-                    <label for="name">Name</label>
-                    <input class="input" id="name" type='text' name='name' maxlength="30" required placeholder="Anastasiia"></input>
-                  </div>
-                
-                  <div class='full-input'>
-                    <label for="email">email</label>
-                    <input class="input" id="email" type='email' required name='email'></input></div>
-               </div>
-                
-                <div class="textarea-input">
-                  <label for='name' > Message</label>
-                  <textarea class="textarea" id="message" name="message" required maxlength="500" placeholder="Enter your message here..."></textarea>
-                </div>
-  
-                <div class="form-button">
-                    <button id="form-button" type="submit">Start Collaboration</button>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="icon2-div">
-            <img id="formbuttomicon" src="./assets/img/buttomicon.png" alt="shape" />
-          </div>
-        
+      </div>
+    </section>
+    <section id="footer">
+      <div class="resume">
+        <p class="paragraph">Get my resume</p>
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </div>
+      <div class="social-media-icon">
+        <i class="fab fa-stack-overflow"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-solid fa-m"></i>
+        <i class="fa-regular fa-hand-point-up"></i>
+      </div>
+    </section>
+    <section id="footer-desktop" class="desktopversion">
+      <div class="footer-flex">
+        <div class="resume-desktop">
+          <p class="paragraph" id="footer-paragraph">Get my resume</p>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </div>
-      </section>
-      <section id="footer">
-        <div class="resume">
-          <p class="paragraph">Get my resume</p>
-          <i class="fa-solid fa-arrow-up-right-from-square" ></i>
-        </div>
-        <div class="social-media-icon" >
+        <div class="social-media-icon" id="social-media-icon">
           <i class="fab fa-stack-overflow"></i>
           <i class="fa-brands fa-github"></i>
           <i class="fa-brands fa-twitter"></i>
@@ -457,24 +417,10 @@
           <i class="fa-solid fa-m"></i>
           <i class="fa-regular fa-hand-point-up"></i>
         </div>
-      </section>
-      <section id="footer-desktop" class="desktopversion">
-        <div class="footer-flex">
-        <div class="resume-desktop">
-          <p class="paragraph" id="footer-paragraph">Get my resume</p>
-          <i class="fa-solid fa-arrow-up-right-from-square" ></i>
-        </div>
-        <div class="social-media-icon" id="social-media-icon">
-          <i class="fab fa-stack-overflow"></i>
-          <i class="fa-brands fa-github" ></i>
-          <i class="fa-brands fa-twitter"  ></i>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-solid fa-m"></i>
-          <i class="fa-regular fa-hand-point-up"></i>
-        </div>
       </div>
-         </section>
-    </main>
-    <script type="text/javascript" src="myScript.js"></script>
-  </body>
+    </section>
+  </main>
+  <script type="text/javascript" src="myScript.js"></script>
+</body>
+
 </html>

@@ -269,6 +269,20 @@ li {
   margin-bottom: 10px;
 }
 
+.popupbottombtn button {
+  display: block;
+  margin: auto;
+  width: 80%;
+  border: 1px solid black;
+  background-color: white;
+  color: #1a2236;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
 #about {
   display: flex;
   flex-direction: column;
@@ -580,6 +594,89 @@ label {
 .mobile-navbar-footer img {
   height: 200px;
   width: 100%;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: #999;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 100;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+  top: 0;
+  left: 0;
+}
+
+#popupclose {
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.popupcontent {
+  padding: 10px;
+}
+
+.mobile-popup {
+  display: flex;
+  width: 100%;
+}
+
+.button-area {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 20px;
+  padding-bottom: 20px;
+}
+
+.mainpopupimage {
+  width: 100%;
+  height: 162px;
+}
+
+.subpopupimages {
+  width: 25%;
+  height: 50px;
+}
+
+.projectpreview {
+  margin-bottom: 20px;
+}
+
+.paragraphpopup {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.2vh;
+  line-height: 27px;
+  letter-spacing: '-0.0.1em';
+  color: #1a2236;
+}
+
+.popuptopbutton {
+  border: 1px solid black;
+  background: none;
+  padding: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: Poppins, sans-serif;
+  font-size: 10px;
+}
+
+.desktoppop {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -1031,6 +1128,131 @@ label {
     top: 0;
     width: 100%;
     background-color: white;
-    overflow: hidden;
+  }
+
+  #overlaydesktop {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: #999;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 100;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .popupdesktop {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    bottom: 0%;
+    background: #fff;
+    z-index: 200;
+  }
+
+  #popupclose {
+    float: right;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .popupcontentd {
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  .popup-border {
+    background-color: white;
+    border: 70px solid #1a2236;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+  }
+
+  #button {
+    cursor: pointer;
+  }
+
+  .subpopupimages1 {
+    width: 25%;
+  }
+
+  .mainpopupimaged {
+    width: 100%;
+    height: 50vh;
+    margin-bottom: -5px;
+  }
+
+  .popupcontrols {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 25px;
+  }
+
+  #popupheader {
+    font-weight: 800;
+    font-style: bold;
+    font-size: 40px;
+    color: #1a2236;
+    font-family: Poppins, sans-serif;
+  }
+
+  .popupbtndiv {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 5%;
+  }
+
+  .popupbtnd {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 26%;
+    border: 1px solid black;
+    background-color: white;
+    color: #1a2236;
+    padding: 1px 25px;
+    font-size: 15px;
+    font-family: Poppins, sans-serif;
+    cursor: pointer;
+    margin-bottom: 70px;
+  }
+
+  .popupbtnd:hover {
+    color: white;
+    background-color: #1a2236;
+  }
+
+  .slider-control {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+  }
+
+  .controlss {
+    display: flex;
+    align-items: baseline;
+    column-gap: 10px;
+  }
+
+  .popupcontentcon {
+    width: 70%;
+    margin: auto;
+  }
+
+  .btnpopupd {
+    background-color: white;
+    padding: 10px 18px;
+  }
+
+  #desktopdp {
+    font-family: Poppins, sans-serif;
+    color: #1a2236;
+    margin-bottom: 25px;
   }
 }
