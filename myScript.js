@@ -457,7 +457,7 @@ function project1dcontent() {
         <img src=${arr[0].image[3]}  class="subpopupimages1" alt="project1" />
       </div>
       <div class="popupcontentcon">
-        <p class="paragraph">
+        <p class="paragraph" id='desktopdp'>
         ${arr[0].description}
         </p>
         <div class="popupbtndiv">
@@ -518,7 +518,7 @@ function project2dcontent() {
         <img src=${arr[1].image[3]}  class="subpopupimages1" alt="project1" />
       </div>
       <div class="popupcontentcon">
-        <p class="paragraph">
+        <p class="paragraph" id='desktopdp'>
         ${arr[1].description}
         </p>
         <div class="popupbtndiv">
@@ -578,8 +578,8 @@ function project3dcontent() {
         <img src=${arr[4].image[2]}  class="subpopupimages1" alt="project1" />
         <img src=${arr[4].image[3]}  class="subpopupimages1" alt="project1" />
       </div>
-      <div class="popupcontentcon">
-        <p class="paragraph">
+      <div class="popupcontentcon" id='desktopdp'>
+        <p class="paragraph" id='popupdp'>
         ${arr[4].description}
         </p>
         <div class="popupbtndiv">
@@ -639,7 +639,7 @@ function project4dcontent() {
         <img src=${arr[2].image[2]}  class="subpopupimages1" alt="project1" />
         <img src=${arr[2].image[3]}  class="subpopupimages1" alt="project1" />
       </div>
-      <div class="popupcontentcon">
+      <div class="popupcontentcon" id='desktopdp'>
         <p class="paragraph">
         ${arr[2].description}
         </p>
@@ -701,7 +701,7 @@ function project5dcontent() {
         <img src=${arr[3].image[3]}  class="subpopupimages1" alt="project1" />
       </div>
       <div class="popupcontentcon">
-        <p class="paragraph">
+        <p class="paragraph" id='desktopdp'>
         ${arr[3].description}
         </p>
         <div class="popupbtndiv">
