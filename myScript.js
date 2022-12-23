@@ -44,7 +44,7 @@ const arr = [
   {
     name: 'project name goes here',
     technologies: ['HTML/CSS', 'Ruby on Rails', 'Javascript'],
-    image: ['./assets/img/project2.png', './assets/img/project2.png','./assets/img/project2.png', './assets/img/project2.png'],
+    image: ['./assets/img/project2.png', './assets/img/project2.png', './assets/img/project2.png', './assets/img/project2.png'],
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     livelink: 'www.google.com',
     sourcelink: 'www.github.com',
@@ -82,6 +82,20 @@ const project4 = document.getElementById('proj4');
 const project5 = document.getElementById('proj5');
 const project6 = document.getElementById('proj6');
 const mobilePopup = document.getElementById('mobile-popup');
+// function closePopup() {
+//   // overlay.style.display = 'none';
+//   popup.style.display = 'none';
+// }
+
+// function openPopup() {
+//   // overlay.style.display = 'block';
+//   popup.style.display = 'block';
+// }
+
+// buttonsArray.forEach((item) => {
+//   item.addEventListener('click', openPopup);
+// });
+// closePopupButton.addEventListener('click', closePopup);
 
 function project1content() {
   mobilePopup.innerHTML = `
@@ -363,7 +377,7 @@ function project6content() {
   <div id="overlay" ></div>
       <div id="popup">
         <div class="popupcontrols">
-          <span id="popupclose">X</span>
+          <i class="fa-solid fa-x" id="popupclose"></i>
         </div>
         <div class="popupcontent">
           <h1>${arr[5].name}</h1>
@@ -414,24 +428,314 @@ function project6content() {
 project6.addEventListener('click', project6content);
 
 const firstPopup = document.getElementById('project-popup');
-const secondPopup = document.getElementById('project-popup2');
+const secondPopup = document.getElementById('laptopimage');
+const thirdPopup = document.getElementById('project-popup2');
+const fourthPopup = document.getElementById('projectimg1');
+const fifthPopup = document.getElementById('projectimg4');
 
-// const closePopup = document.getElementById('popupclose');
-const overlay = document.getElementById('overlaydesktop');
-const popup = document.getElementById('popupdesktop');
-const button = document.getElementById('button');
+const desktopPopup = document.getElementById('popupdesktopd');
 
-function closePopup () {
-  overlay.style.display = 'none';
-  popup.style.display = 'none';
+function project1dcontent() {
+  desktopPopup.innerHTML = `
+  <div id="popupdesktop">
+  <div class="popupcontentd">
+    <div class="popup-border">
+      <div class="popupcontrols">
+        <h1 id="popupheader">${arr[0].name}</h1>
+        <i class="fa-solid fa-x" id="popupclosedesktop" onclick='closePopup1()'></i>
+      </div>
+      <div class="button-area">
+        <button class="btnpopupd">${arr[0].technologies[0]}</button>
+        <button class="btnpopupd">${arr[0].technologies[1]}</button>
+        <button class="btnpopupd">${arr[0].technologies[2]}</button>
+      </div>
+      <img id='popupmainimg' class="mainpopupimaged" src=${arr[0].image[0]} />
+      <div class="mobile-popup">
+        <img src=${arr[0].image[0]}  class="subpopupimages1" alt="project1" />
+        <img src=${arr[0].image[1]}  class="subpopupimages1" alt="project1" />
+        <img src=${arr[0].image[2]}  class="subpopupimages1" alt="project1" />
+        <img src=${arr[0].image[3]}  class="subpopupimages1" alt="project1" />
+      </div>
+      <div class="popupcontentcon">
+        <p class="paragraph">
+        ${arr[0].description}
+        </p>
+        <div class="popupbtndiv">
+          <div class="popupbtnd" href=${arr[0].livelink}>
+            <p>See Live </p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+          <div class="popupbtnd" ${arr[0].sourcelink}>
+            <p>See Source</p>
+            <i class="fa-brands fa-github"></i>
+          </div>
+        </div>
+        <div class="slider-control">
+          <div class="controlss">
+            <i class="fa-solid fa-arrow-left"></i>
+            <p class="paragraph">Previous Page</p>
+          </div>
+          <div class="controlss">
+            <p class="paragraph">Next Page</p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  `;
+  document.getElementById('popupdesktop').style.display = 'block';
+  const buttonClose1 = document.getElementById('popupclosedesktop');
+  function popupdesktopclose() {
+    document.getElementById('popupdesktop').style.display = 'none';
+  }
+
+  buttonClose1.addEventListener('click', popupdesktopclose);
 }
 
-firstPopup.onclick = function() {
-  overlay.style.display = 'block';
-  popup.style.display = 'block';
-};
+firstPopup.addEventListener('click', project1dcontent);
 
-firstPopup.addEventListener('click', function() {
-  overlay.style.display = 'block';
-  popup.style.display = 'block';
-})
+function project2dcontent() {
+  desktopPopup.innerHTML = `
+  <div id="popupdesktop">
+  <div class="popupcontentd">
+    <div class="popup-border">
+      <div class="popupcontrols">
+        <h1 id="popupheader">${arr[1].name}</h1>
+        <i class="fa-solid fa-x" id="popupclosedesktop" onclick='closePopup1()'></i>
+      </div>
+      <div class="button-area">
+        <button class="btnpopupd">${arr[1].technologies[0]}</button>
+        <button class="btnpopupd">${arr[1].technologies[1]}</button>
+        <button class="btnpopupd">${arr[1].technologies[2]}</button>
+      </div>
+      <img id='popupmainimg' class="mainpopupimaged" src=${arr[1].image[0]} />
+      <div class="mobile-popup">
+        <img src=${arr[1].image[0]}  class="subpopupimages1" alt="project1" />
+        <img src=${arr[1].image[1]}  class="subpopupimages1" alt="project1" />
+        <img src=${arr[1].image[2]}  class="subpopupimages1" alt="project1" />
+        <img src=${arr[1].image[3]}  class="subpopupimages1" alt="project1" />
+      </div>
+      <div class="popupcontentcon">
+        <p class="paragraph">
+        ${arr[1].description}
+        </p>
+        <div class="popupbtndiv">
+          <div class="popupbtnd" href=${arr[1].livelink}>
+            <p>See Live </p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+          <div class="popupbtnd" ${arr[1].sourcelink}>
+            <p>See Source</p>
+            <i class="fa-brands fa-github"></i>
+          </div>
+        </div>
+        <div class="slider-control">
+          <div class="controlss">
+            <i class="fa-solid fa-arrow-left"></i>
+            <p class="paragraph">Previous Page</p>
+          </div>
+          <div class="controlss">
+            <p class="paragraph">Next Page</p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  `;
+  document.getElementById('popupdesktop').style.display = 'block';
+  const buttonClose1 = document.getElementById('popupclosedesktop');
+  function popupdesktopclose() {
+    document.getElementById('popupdesktop').style.display = 'none';
+  }
+
+  buttonClose1.addEventListener('click', popupdesktopclose);
+}
+
+secondPopup.addEventListener('click', project2dcontent);
+
+function project3dcontent() {
+  desktopPopup.innerHTML = `
+  <div id="popupdesktop">
+  <div class="popupcontentd">
+    <div class="popup-border">
+      <div class="popupcontrols">
+        <h1 id="popupheader">${arr[4].name}</h1>
+        <i class="fa-solid fa-x" id="popupclosedesktop" onclick='closePopup1()'></i>
+      </div>
+      <div class="button-area">
+        <button class="btnpopupd">${arr[4].technologies[0]}</button>
+        <button class="btnpopupd">${arr[4].technologies[1]}</button>
+        <button class="btnpopupd">${arr[4].technologies[2]}</button>
+      </div>
+      <img id='popupmainimg' class="mainpopupimaged" src=${arr[4].image[0]} />
+      <div class="mobile-popup">
+        <img src=${arr[4].image[0]}  class="subpopupimages1" alt="project1" />
+        <img src=${arr[4].image[1]}  class="subpopupimages1" alt="project1" />
+        <img src=${arr[4].image[2]}  class="subpopupimages1" alt="project1" />
+        <img src=${arr[4].image[3]}  class="subpopupimages1" alt="project1" />
+      </div>
+      <div class="popupcontentcon">
+        <p class="paragraph">
+        ${arr[4].description}
+        </p>
+        <div class="popupbtndiv">
+          <div class="popupbtnd" href=${arr[4].livelink}>
+            <p>See Live </p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+          <div class="popupbtnd" ${arr[4].sourcelink}>
+            <p>See Source</p>
+            <i class="fa-brands fa-github"></i>
+          </div>
+        </div>
+        <div class="slider-control">
+          <div class="controlss">
+            <i class="fa-solid fa-arrow-left"></i>
+            <p class="paragraph">Previous Page</p>
+          </div>
+          <div class="controlss">
+            <p class="paragraph">Next Page</p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  `;
+  document.getElementById('popupdesktop').style.display = 'block';
+  const buttonClose1 = document.getElementById('popupclosedesktop');
+  function popupdesktopclose() {
+    document.getElementById('popupdesktop').style.display = 'none';
+  }
+
+  buttonClose1.addEventListener('click', popupdesktopclose);
+}
+
+thirdPopup.addEventListener('click', project3dcontent);
+
+function project4dcontent() {
+  desktopPopup.innerHTML = `
+  <div id="popupdesktop">
+  <div class="popupcontentd">
+    <div class="popup-border">
+      <div class="popupcontrols">
+        <h1 id="popupheader">${arr[2].name}</h1>
+        <i class="fa-solid fa-x" id="popupclosedesktop" onclick='closePopup1()'></i>
+      </div>
+      <div class="button-area">
+        <button class="btnpopupd">${arr[2].technologies[0]}</button>
+        <button class="btnpopupd">${arr[2].technologies[1]}</button>
+        <button class="btnpopupd">${arr[2].technologies[2]}</button>
+      </div>
+      <img id='popupmainimg' class="mainpopupimaged" src=${arr[2].image[0]} />
+      <div class="mobile-popup">
+        <img src=${arr[2].image[0]}  class="subpopupimages1" alt="project1" />
+        <img src=${arr[2].image[1]}  class="subpopupimages1" alt="project1" />
+        <img src=${arr[2].image[2]}  class="subpopupimages1" alt="project1" />
+        <img src=${arr[2].image[3]}  class="subpopupimages1" alt="project1" />
+      </div>
+      <div class="popupcontentcon">
+        <p class="paragraph">
+        ${arr[2].description}
+        </p>
+        <div class="popupbtndiv">
+          <div class="popupbtnd" href=${arr[2].livelink}>
+            <p>See Live </p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+          <div class="popupbtnd" ${arr[2].sourcelink}>
+            <p>See Source</p>
+            <i class="fa-brands fa-github"></i>
+          </div>
+        </div>
+        <div class="slider-control">
+          <div class="controlss">
+            <i class="fa-solid fa-arrow-left"></i>
+            <p class="paragraph">Previous Page</p>
+          </div>
+          <div class="controlss">
+            <p class="paragraph">Next Page</p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  `;
+  document.getElementById('popupdesktop').style.display = 'block';
+  const buttonClose1 = document.getElementById('popupclosedesktop');
+  function popupdesktopclose() {
+    document.getElementById('popupdesktop').style.display = 'none';
+  }
+
+  buttonClose1.addEventListener('click', popupdesktopclose);
+}
+
+fourthPopup.addEventListener('click', project4dcontent);
+
+function project5dcontent() {
+  desktopPopup.innerHTML = `
+  <div id="popupdesktop">
+  <div class="popupcontentd">
+    <div class="popup-border">
+      <div class="popupcontrols">
+        <h1 id="popupheader">${arr[3].name}</h1>
+        <i class="fa-solid fa-x" id="popupclosedesktop" onclick='closePopup1()'></i>
+      </div>
+      <div class="button-area">
+        <button class="btnpopupd">${arr[3].technologies[0]}</button>
+        <button class="btnpopupd">${arr[3].technologies[1]}</button>
+        <button class="btnpopupd">${arr[3].technologies[2]}</button>
+      </div>
+      <img id='popupmainimg' class="mainpopupimaged" src=${arr[2].image[0]} />
+      <div class="mobile-popup">
+        <img src=${arr[3].image[0]}  class="subpopupimages1" alt="project1" />
+        <img src=${arr[3].image[1]}  class="subpopupimages1" alt="project1" />
+        <img src=${arr[3].image[2]}  class="subpopupimages1" alt="project1" />
+        <img src=${arr[3].image[3]}  class="subpopupimages1" alt="project1" />
+      </div>
+      <div class="popupcontentcon">
+        <p class="paragraph">
+        ${arr[3].description}
+        </p>
+        <div class="popupbtndiv">
+          <div class="popupbtnd" href=${arr[3].livelink}>
+            <p>See Live </p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+          <div class="popupbtnd" ${arr[3].sourcelink}>
+            <p>See Source</p>
+            <i class="fa-brands fa-github"></i>
+          </div>
+        </div>
+        <div class="slider-control">
+          <div class="controlss">
+            <i class="fa-solid fa-arrow-left"></i>
+            <p class="paragraph">Previous Page</p>
+          </div>
+          <div class="controlss">
+            <p class="paragraph">Next Page</p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  `;
+  document.getElementById('popupdesktop').style.display = 'block';
+  const buttonClose1 = document.getElementById('popupclosedesktop');
+  function popupdesktopclose() {
+    document.getElementById('popupdesktop').style.display = 'none';
+  }
+
+  buttonClose1.addEventListener('click', popupdesktopclose);
+}
+
+fifthPopup.addEventListener('click', project5dcontent);
