@@ -227,17 +227,12 @@ popupDesktopclose.forEach((btn, index) => {
   });
 });
 
-const input = document.getElementById('email');
-input.oninvalid = function (event) {
-  event.target.setCustomValidity('Username should only contain lowercase letters e.g gerald@gmail.com');
-};
-
 const email = document.getElementById('email');
 const form = document.getElementById('form');
 const errorElement = document.getElementById('error');
 
 form.addEventListener('submit', (e) => {
-  const reg = /^([a-z0-9_\-\.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
+  const reg = /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
   const messages = [];
   if (reg.test(email.value) === false) {
     messages.push('Email is not valid make sure all the letters are in small case');
@@ -254,7 +249,7 @@ const formd = document.getElementById('formd');
 const errorElementd = document.getElementById('errord');
 
 formd.addEventListener('submit', (e) => {
-  const regd = /^([a-z0-9_\-\.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
+  const regd = /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
   const messagesd = [];
   if (regd.test(emaild.value) === false) {
     messagesd.push('Email is not valid make sure all the letters are in small case');
