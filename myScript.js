@@ -234,6 +234,7 @@ const errorElement = document.getElementById('error');
 form.addEventListener('submit', (e) => {
   const reg = /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
   const messages = [];
+  localStorage.setItem('email', email);
   if (reg.test(email.value) === false) {
     messages.push('Email is not valid make sure all the letters are in small case');
   }
@@ -251,6 +252,7 @@ const errorElementd = document.getElementById('errord');
 formd.addEventListener('submit', (e) => {
   const regd = /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
   const messagesd = [];
+  localStorage.setItem('emaild', emaild);
   if (regd.test(emaild.value) === false) {
     messagesd.push('Email is not valid make sure all the letters are in small case');
   }
@@ -260,3 +262,59 @@ formd.addEventListener('submit', (e) => {
     errorElementd.style.display = 'flex';
   }
 });
+
+const formdata = document.querySelectorAll('.data');
+
+const data = {
+  name: formdata[0].value,
+  email: formdata[1].value,
+  message: formdata[2].value,
+};
+
+formdata.forEach((input) => {
+  input.addEventListener('change', () => {
+    data.name = formdata[0].value;
+    data.email = formdata[1].value;
+    data.message = formdata[2].value;
+    localStorage.setItem('data', JSON.stringify(data));
+  });
+});
+
+const dataretrieve = () => {
+  const dataget = JSON.parse(localStorage.getItem('data'));
+  if (dataget) {
+    formdata[0].value = dataget.name;
+    formdata[1].value = dataget.email;
+    formdata[2].value = dataget.message;
+  }
+};
+
+window.addEventListener('DOMContentLoaded', dataretrieve);
+
+const formdatadesktop = document.querySelectorAll('.datadesktop');
+
+const datadesk = {
+  name: formdatadesktop[0].value,
+  email: formdatadesktop[1].value,
+  message: formdatadesktop[2].value,
+};
+
+formdatadesktop.forEach((input) => {
+  input.addEventListener('change', () => {
+    datadesk.name = formdatadesktop[0].value;
+    datadesk.email = formdatadesktop[1].value;
+    datadesk.message = formdatadesktop[2].value;
+    localStorage.setItem('datad', JSON.stringify(datadesk));
+  });
+});
+
+const dataretrieved = () => {
+  const datagetd = JSON.parse(localStorage.getItem('datad'));
+  if (datagetd) {
+    formdatadesktop[0].value = datagetd.name;
+    formdatadesktop[1].value = datagetd.email;
+    formdatadesktop[2].value = datagetd.message;
+  }
+};
+
+window.addEventListener('DOMContentLoaded', dataretrieved);
