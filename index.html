@@ -170,7 +170,7 @@
     <section id="projects" class="mobile">
       <!-- projects mobile section -->
      </section>
-     
+
     <!-- desktop pop up-->
     <section class="desktop-version" id="popupdesktopd">
     </section>
@@ -309,7 +309,7 @@
           Hello! I am a software developer! I can help you build a product,
           feature or website. Fill this form and lets work.
         </p>
-        <form action="/my-handling-form-page" method="post">
+        <form action="https://formspree.io/f/xeqdylgv" method="post">
           <div class="form-wrapper">
 
             <div class='full-input'><label for='name'> Your name</label>
@@ -317,7 +317,7 @@
             </div>
 
             <div class='full-input'><label for='email'> Your email</label>
-              <input class="input" id="email" type='email' name='email'></input>
+              <input class="input" id="email" type='text' pattern="^[a-z]+\@[^\s]+\.[^\s]+$" name='email'></input>
             </div>
 
             <div class="textarea-input">
@@ -326,7 +326,9 @@
             </div>
 
             <div class="form-button">
-              <button id="form-button" type="submit">Start Collaboration</button>
+              <button id="form-button" type="submit" >Start Collaboration</button>
+            </div>
+            <div class="error" id="error">
             </div>
           </div>
         </form>
@@ -355,7 +357,7 @@
             Hello! I am a software developer! I can help you build a product,
             feature or website. Fill this form and lets work.
           </p>
-          <form action="https://formspree.io/f/xeqdylgv" method="post">
+          <form action="https://formspree.io/f/xeqdylgv" method="post" id="formd">
             <div class="form-wrapper">
 
               <div class="form-input-flex">
@@ -367,7 +369,7 @@
 
                 <div class='full-input'>
                   <label for="email">email</label>
-                  <input class="input" id="email" type='email' required name='email'></input>
+                  <input class="input" id="emaild" type='text' pattern="^[a-z]+\@[^\s]+\.[^\s]+$" required name='email'></input>
                 </div>
               </div>
 
@@ -379,6 +381,8 @@
 
               <div class="form-button">
                 <button id="form-button" type="submit">Start Collaboration</button>
+              </div>
+              <div class="error" id="errord">
               </div>
             </div>
           </form>

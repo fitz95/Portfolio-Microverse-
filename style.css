@@ -679,6 +679,21 @@ label {
   display: none;
 }
 
+.error {
+  color: #D8000C;
+  background-color: #FFBABA;
+  background-image: url('https://i.imgur.com/GnyDvKN.png');
+  background-repeat: no-repeat;
+  background-position-y: center;
+  margin-top: -50px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  display: none;
+  /* display: none; */
+}
+
 @media screen and (min-width: 768px) {
   .mobile-version {
     display: none;
