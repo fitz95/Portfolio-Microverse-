@@ -226,3 +226,37 @@ popupDesktopclose.forEach((btn, index) => {
     popupDesktop[index].style.display = 'none';
   });
 });
+
+const email = document.getElementById('email');
+const form = document.getElementById('form');
+const errorElement = document.getElementById('error');
+
+form.addEventListener('submit', (e) => {
+  const reg = /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
+  const messages = [];
+  if (reg.test(email.value) === false) {
+    messages.push('Email is not valid make sure all the letters are in small case');
+  }
+  if (messages.length > 0) {
+    e.preventDefault();
+    errorElement.innerText = messages.join(', ');
+    errorElement.style.display = 'flex';
+  }
+});
+
+const emaild = document.getElementById('emaild');
+const formd = document.getElementById('formd');
+const errorElementd = document.getElementById('errord');
+
+formd.addEventListener('submit', (e) => {
+  const regd = /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
+  const messagesd = [];
+  if (regd.test(emaild.value) === false) {
+    messagesd.push('Email is not valid make sure all the letters are in small case');
+  }
+  if (messagesd.length > 0) {
+    e.preventDefault();
+    errorElementd.innerText = messagesd.join(', ');
+    errorElementd.style.display = 'flex';
+  }
+});
